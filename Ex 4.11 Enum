@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class test : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    
+    // 인덱스 숫자로 기억을 해서 가독성도 높고 실수로 인덱스를 잘못 입력할 확률도 적어지게 되고
+    // 더 늘어날 일도 없다.
+    
+    {
+        Debug.Log((int)Days.Mon);
+        Debug.Log((int)Days.Tue);
+        Debug.Log((int)Days.Wed);
+        Debug.Log((int)Days.Thu);
+        Debug.Log((int)Days.Fri);
+        Debug.Log((int)Days.Sat);
+        Debug.Log((int)Days.Sun);
+    }
+
+    enum Days
+    {
+        Mon =3, Tue, Wed, Thu =12, Fri, Sat, Sun
+    }
+}
